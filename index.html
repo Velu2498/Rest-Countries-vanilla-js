@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rest-Countries</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+
+<body style="height: 100vh;" onload="restCountries('https://restcountries.eu/rest/v2/all', 'name')">
+    <div class="container-fluid">
+        <!-- Heading -->
+        <div class="row" style="height: 5vh;">
+            <div class="col-lg-12" style="text-align: center; background-color: rgb(43, 20, 245);z-index: 1;">
+                <h3 style="color: white;">COUNTRIE DETAILS</h3>
+            </div>
+        </div>
+        <br>
+        <!-- Contant -->
+        <div class="row" style="height: 85vh;" >
+            <!-- RestCountries names -->
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-lg-12" style="overflow-y: scroll; height: 90vh;">
+                        <ul id="countrylist" style="list-style-type: none; width: 100%;">
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- RestCountries Details in table -->
+            <div class="col-lg-9" id="con">
+                <div class="row">
+                    <div class="col-lg-12" style="overflow-y: scroll; height: 90vh;"  >
+                        <table class="table table-light" id="table">
+                            
+                         <tr>
+                             <th>Country Name</th>
+                             <th id=" name">
+                            </th>
+                            </tr>
+                            <tr>
+                                <th>Top Level Domain</th>
+                                <th id="domain">
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th>Capital</th>
+                                <th id="capital"></th>
+                            </tr>
+
+                            <tr>
+                                <th>Region</th>
+                                <th id="region"></th>
+                            </tr>
+                            <tr>
+                                <th>Sub-region</th>
+                                <th id="subregion"></th>
+                            </tr>
+                            <tr>
+                                <th>Population</th>
+                                <th id="population"></th>
+                            </tr>
+                            <tr>
+                                <th>Lat-Long</th>
+                                <th id="latlong"></th>
+                            </tr>
+
+                            <tr>
+                                <th>Area</th>
+                                <th id="area"></th>
+                            </tr>
+
+                            <tr>
+                                <th>TimeZones</th>
+                                <th id="timezones"></th>
+                            </tr>
+                            <tr>
+                                <th>Borders</th>
+                                <th id="borders"></th>
+                            </tr>
+
+                            <tr>
+                                <th>Flag</th>
+                               <th>  <img id="flag" width="50%" height="50%" opacity=1> </th>
+                            </tr>
+                            
+                        </table>
+                        <!-- <div class="d-flex justify-content-center">
+                            <b>Flag</b>
+                            <img id="flag" width="50%" height="50%">
+                        </div> -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src=" index.js">
+    </script>
+
+</body>
+
+</html>
