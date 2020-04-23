@@ -14,7 +14,6 @@ async function restCountries(endpoint, findelement) {
         var key = elements[findelement];
         // console.log(key)
         myObject[key] = elements;
-        // console.log(myObject)
 
     })
 
